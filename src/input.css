@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-lora: "Lora";
+}
+
+/* Mobile styles (max-width: 678px) */
+@media only screen and (max-width: 678px) {
+  .Desktop_only {
+    display: none !important;
+  }
+
+  .shopify-section {
+    overflow-x: hidden;
+  }
+
+  .product_judge-outer {
+    padding: 32px 0;
+  }
+
+  #shopify-section-template--27607240409431__info2 .product_judge-outer {
+    padding-bottom: 0;
+  }
+}
+
+/* Desktop styles (min-width: 678px) */
+@media only screen and (min-width: 678px) {
+  .Mobile_only {
+    display: none !important;
+  }
+}
+
+/* Larger screens (min-width: 750px) */
+@media screen and (min-width: 750px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.06rem;
+  line-height: calc(1 + 0.8 / 1);
+  font-family: var(--font-montserrat);
+  font-style: normal;
+  font-weight: 400;
+}

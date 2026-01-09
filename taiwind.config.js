@@ -7,7 +7,12 @@ module.exports = {
     "./**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        lora: ["Lora"],
+      },
+    },
   },
   plugins: [],
 };
