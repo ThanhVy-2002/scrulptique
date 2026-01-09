@@ -4,6 +4,9 @@ const sections = [
   "main-section-3",
   "main-section-4",
   "main-section-5",
+  "main-section-6",
+  "main-section-7",
+  "main-section-8",
 ];
 const mainContainer = document.getElementById("site-main");
 

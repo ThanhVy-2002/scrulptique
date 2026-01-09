@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         lora: ["Lora"],
+        trirong: ["Trirong", "serif"],
       },
     },
   },
