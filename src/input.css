@@ -38,6 +38,12 @@
     font-size: 1.6rem;
   }
 }
+/* Larger screens (min-width: 769px) */
+@media (min-width: 769px) {
+  #frontrow-sticker {
+    top: 20px;
+  }
+}
 
 body {
   display: grid;
@@ -51,4 +57,13 @@ body {
   font-family: var(--font-montserrat);
   font-style: normal;
   font-weight: 400;
+}
+
+.focus-none {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+#frontrow-sticker {
+  width: 437px;
 }
