@@ -16,7 +16,9 @@
           }
         }
         .page-width {
+          max-width: 120rem;
           margin: 0 auto;
+          padding: 0 1.5rem;
         }
       </style>
       <h2 class="product-section_title centered">
@@ -44,7 +46,6 @@
             max-width: 824px;
             margin: auto;
             border-radius: 16px;
-            background: linear-gradient(180deg, #fff, #f7a0a0bf);
             overflow: hidden;
             padding: 32px;
           }
@@ -82,6 +83,9 @@
           .product_faq-thumb svg {
             width: 16px;
             transition: all 0.2s;
+          }
+          .active .product_faq-thumb svg {
+            transform: rotate(180deg);
           }
         </style>
         <div class="product_faq-box">
@@ -344,24 +348,6 @@
             line-height: 1.3em;
             text-align: center;
           }
-          .shopify-section p {
-            font-family: Nunito;
-          }
-          .product_primary-btn-footer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            font-size: 16px;
-            line-height: 1.3em;
-            margin: 16px 0 0;
-          }
-          p {
-            color: #000;
-          }
-          .product_primary-btn-footer img {
-            width: 24px !important;
-          }
         </style>
         <a
           href="https://pay.trysculptique.com/lymphatic/checkout"
@@ -370,7 +356,29 @@
         >
 
         <p class="product_primary-btn-footer">
+          <style>
+            .shopify-section p {
+              font-family: Nunito;
+            }
+            .product_primary-btn-footer {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 16px;
+              font-size: 16px;
+              line-height: 1.3em;
+              margin: 16px 0 0;
+            }
+            p {
+              color: #000;
+            }
+          </style>
           <span>
+            <style>
+              .product_primary-btn-footer img {
+                width: 24px !important;
+              }
+            </style>
             <img
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395"
             />
