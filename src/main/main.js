@@ -19,14 +19,14 @@ sections.forEach((sectionName) => {
 
 // Load each section
 sections.forEach((sectionName) => {
-  fetch(`/src/main/${sectionName}/${sectionName}.html`)
+  fetch(`src/main/${sectionName}/${sectionName}.html`)
     .then((res) => res.text())
     .then((html) => {
       document.getElementById(sectionName).innerHTML = html;
 
       // Load corresponding JS
       const script = document.createElement("script");
-      script.src = `/src/main/${sectionName}/${sectionName}.js`;
+      script.src = `src/main/${sectionName}/${sectionName}.js`;
       document.body.appendChild(script);
     })
     .catch((err) => console.error(`${sectionName} load failed:`, err));
