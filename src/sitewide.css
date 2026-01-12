@@ -388,42 +388,6 @@ p {
   }
 }
 
-.nutrition_popup-outer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000000b3;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 99999;
-}
-.nutrition_popup-inner img {
-  width: 100%;
-}
-.nutrition_popup-inner {
-  width: 100%;
-  max-width: 450px;
-  padding: 16px;
-  border-radius: 12px;
-  position: relative;
-  background: #fff;
-}
-.nutrition_popup-inner img.nutrition_popup-close {
-  position: absolute;
-  width: 24px;
-  right: 8px;
-  top: 8px;
-  cursor: pointer;
-  transform: rotate(45deg);
-  border-radius: 50%;
-  border: 1px solid #d5416e;
-}
-.nutrition_popup-inner .main_product-title {
-  margin-top: 0;
-}
 .main_product-btn {
   display: block;
   padding: 20px;
