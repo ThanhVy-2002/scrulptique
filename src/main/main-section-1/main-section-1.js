@@ -133,3 +133,46 @@ document.querySelectorAll(".product-selector_block").forEach((block) => {
     this.classList.add("active");
   });
 });
+
+// Toggle
+function initReviewFormToggle() {
+  const writeReviewLinks = document.querySelectorAll(".jdgm-write-rev-link");
+
+  writeReviewLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const formWrapper = document.querySelector(".jdgm-form-wrapper");
+
+      if (!formWrapper) {
+        return;
+      }
+
+      const isFormVisible = formWrapper.style.display !== "none";
+
+      if (isFormVisible) {
+        // Close form
+        formWrapper.style.display = "none";
+        link.setAttribute("aria-expanded", "false");
+        link.textContent = "Write a review";
+        link.classList.remove("close-form-btn");
+      } else {
+        // Open form
+        formWrapper.style.display = "block";
+        link.setAttribute("aria-expanded", "true");
+        link.textContent = "Cancel review";
+        link.classList.add("close-form-btn");
+
+        // Scroll to form smoothly
+        formWrapper.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+    });
+  });
+}
+
+// Initialize review form toggle
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initReviewFormToggle);
+} else {
+  initReviewFormToggle();
+}

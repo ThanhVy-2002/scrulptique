@@ -982,9 +982,9 @@
 .jdgm-paginate__load-more,
 .jdgm-paginate__load-more:not([disabled]):hover {
   background-color: #108474;
-  background-color: var(--jdgm-paginate-color);
+  background-color: var(--jdgm-primary-color);
   border-color: #108474;
-  border-color: var(--jdgm-paginate-color);
+  border-color: var(--jdgm-primary-color);
 }
 .jdgm-paginate__page {
   display: inline-block;
@@ -994,7 +994,7 @@
   line-height: 1;
   cursor: pointer;
   color: #108474;
-  color: var(--jdgm-paginate-color);
+  color: var(--jdgm-primary-color);
 }
 .jdgm-paginate__page:hover {
   opacity: 0.6;
@@ -1004,7 +1004,7 @@
 .jdgm-paginate__page:active,
 .jdgm-paginate__page:visited {
   color: #108474;
-  color: var(--jdgm-paginate-color);
+  color: var(--jdgm-primary-color);
 }
 .jdgm-paginate__page.jdgm-curt {
   color: #7b7b7b;
@@ -1044,7 +1044,7 @@
 }
 .jdgm-star {
   font-family: "JudgemeStar" !important;
-  color: #fa8a8a;
+  color: var(--jdgm-primary-color);
 }
 .jdgm-rev-widg.jdgm-rev-widg {
   display: block;
@@ -1101,7 +1101,7 @@
 .jdgm-all-reviews .jdgm-star,
 .jdgm-gallery-popup .jdgm-star {
   color: #108474;
-  color: var(--jdgm-star-color);
+  color: var(--jdgm-primary-color);
 }
 .jdgm-rev-widg .jdgm-star:not([disabled]):hover,
 .jdgm-rev-widg .jdgm-star:focus,
@@ -1112,7 +1112,7 @@
 .jdgm-gallery-popup .jdgm-star:not([disabled]):hover,
 .jdgm-gallery-popup .jdgm-star:focus {
   color: #108474;
-  color: var(--jdgm-star-color);
+  color: var(--jdgm-primary-color);
 }
 .jdgm-verified-link-wrapper {
   display: flex;
@@ -1937,7 +1937,7 @@
 .jdgm-rev[data-verified-buyer="true"] .jdgm-rev__icon.jdgm-rev__icon:after,
 .jdgm-rev__buyer-badge.jdgm-rev__buyer-badge {
   color: white;
-  background-color: #fa8a8a;
+  background-color: var(--jdgm-primary-color);
 }
 
 .jdgm-rev__buyer-badge:before {
@@ -1946,5 +1946,5 @@
 
 .jdgm-rev__author {
   color: #108474;
-  color: #fa8a8a;
+  color: var(--jdgm-primary-color);
 }
