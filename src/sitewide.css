@@ -241,8 +241,11 @@ p {
   border: 1px solid #d5416e;
 }
 .product_tab-content {
-  padding-top: 16px;
-  display: none;
+  /* padding-top: 16px; */
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 .product_tab-content p {
   margin: 0 0 12px;
