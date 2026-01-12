@@ -1,4 +1,4 @@
-fetch("./header/header.html")
+fetch("/src/header/header.html")
   .then((res) => res.text())
   .then((html) => {
     document.getElementById("site-header").innerHTML = html;
