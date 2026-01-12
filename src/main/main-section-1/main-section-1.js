@@ -120,3 +120,16 @@ if (productTabContainer) {
     });
   });
 }
+
+// Add click event listeners to all product selector blocks
+document.querySelectorAll(".product-selector_block").forEach((block) => {
+  block.addEventListener("click", function () {
+    const container = this.closest(".product-selector_outer");
+
+    container.querySelectorAll(".product-selector_block").forEach((b) => {
+      b.classList.remove("active");
+    });
+
+    this.classList.add("active");
+  });
+});

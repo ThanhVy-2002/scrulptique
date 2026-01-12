@@ -1,3 +1,4 @@
+//Product lymph ingredient
 const CHECK_ICON =
   "https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419";
 
@@ -130,4 +131,61 @@ if (productLymphIngrTable) {
       }
     });
   });
+}
+
+//Product why bloating
+const productWhyBloatingData = [
+  {
+    image: "//trysculptique.com/cdn/shop/files/X1.jpg?v=1760943360",
+    title: "You cut out gluten, dairy, sugar. You ate clean for months.",
+    reason: `Your diet only addressed what goes IN. It didn't fix your body's broken ability to drain what's already there.`,
+  },
+  {
+    image: "//trysculptique.com/cdn/shop/files/X2.jpg?v=1760943359",
+    title: "You tried viral lymphatic drops from TikTok.",
+    reason: `They're just pricey water with trace herbs. The "active ingredients" are destroyed by stomach acid, and even if absorbed, only act as a mild diuretic. No vessel repair, no protein breakdown—just expensive urine.`,
+  },
+  {
+    image: "//trysculptique.com/cdn/shop/files/X3.jpg?v=1760943359",
+    title: "You got lymphatic massage or bought compression socks.",
+    reason: `Temporary manual movement. Within 24-48 hours, everything backed up again because your vessels still can't pump on their own.`,
+  },
+];
+
+const ICON_URL =
+  "https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_6.png?v=1760696853";
+
+const productWhyBloatingGrid = document.getElementById(
+  "product_why_bloating_grid"
+);
+
+if (productWhyBloatingGrid) {
+  productWhyBloatingGrid.innerHTML = productWhyBloatingData
+    .map(
+      (cell) => `
+      <div class="product_why-nothing-cell">
+        <div>
+          <img src="${cell.image}" />
+        </div>
+        <div class="product_why-nothing-cell-inn">
+          <h4>${cell.title}</h4>
+          <div class="product_why-nothing-pink">
+            <p class="product_why-nothing-subtitle">
+              <span> Why it failed </span>
+              <span>
+                <img
+                  loading="lazy"
+                  src="${ICON_URL}"
+                />
+              </span>
+            </p>
+            <p class="product_why-nothing-text">
+              ${cell.reason}
+            </p>
+          </div>
+        </div>
+      </div>
+    `
+    )
+    .join("");
 }
